@@ -1,0 +1,19 @@
+body{
+    background: #fafafa;
+}
+
+#header{
+    width: 100%; /* 공중에 뜨기 위함 */
+    position: absolute; /* 가장 위에 올라가 있어야 하기 위함 */
+    z-index: 999; /* absolute의 경우 최소 x축에서 1개 y축에서 1개의 값을 주어야 함 */
+    left: 0;
+    top: 0;
+    background: white;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+#header .inner{ /* inner 안에 컨텐츠를 넣으면 안에 값이 들어옴 */
+    width: 975px;
+    height: 77px;
+    margin: 0 auto; /* 가운데 정렬 */
+}
