@@ -17,3 +17,31 @@ body{
     height: 77px;
     margin: 0 auto; /* 가운데 정렬 */
 }
+
+.sprite_insta_icon {
+    display: inline-block;
+	background: url('../imgs/background01.png') no-repeat -53px -235px;
+	width: 22px;
+	height: 22px;
+}
+
+.sprite_write_logo {
+    display: inline-block;
+	background: url('../imgs/background01.png') no-repeat -94px -72px;
+	width: 103px;
+	height: 29px;
+}
+
+.sprite_compass_icon {
+    display: inline-block;
+	background: url('../imgs/background01.png') no-repeat -130px -286px;
+	width: 23px;
+	height: 23px;
+}
+
+.sprite_user_icon_outline {
+    display: inline-block;
+	background: url('../imgs/background01.png') no-repeat -272px -182px;
+	width: 22px;
+	height: 24px;
+}
