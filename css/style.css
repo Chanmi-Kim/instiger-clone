@@ -203,3 +203,59 @@ body{
     transform: translateY(2px);
 }
 
+#main_container{
+    padding-top: 130px;
+    display: flex; /* 컨텐츠가 가운데에 위치할 수 있도록 함 */
+    justify-content: center; /* x축 가운데 정렬 */
+}
+
+#main_container .inner{
+    width: 935px;
+    /* height: 500px; */
+    /* background: red; */
+}
+
+.contents_box{
+
+}
+
+.contents{
+    width: 614px;
+    height: 500px;
+    border: 1px solid rgba(0,0,0,0.09);
+    border-radius: 3px; /* 테두리를 둥글게 만듬 */
+    margin-bottom: 50px; /* 다른 contents들이 밀려야 되기 때문에 사이에 여백을 준다 */
+    background: white;
+}
+
+.contents .top{
+    display: flex; /* 가로 배치 */
+    justify-content: space-between; /* x축 정렬_공간을 자동으로 분배 */
+    align-items: center;
+    padding: 10px 20px; /* 위아래 양쪽 */
+}
+
+.contents .top .profile_img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%; /* 테두리를 둥글게 설정 50% -> 원의 형태 */
+    overflow: hidden; /* 자식이 크기가 넘치지 않도록 한다 */
+    margin-right: 10px;
+}
+
+.contents .top .profile_img img{
+    width: 100%; /* 100%가 없을 경우 이미지가 들어가지 않음 */
+}
+
+.contents .top .user_container{
+    display: flex; /* 가로 배치 */
+}
+
+.m_text{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.s_text{
+    font-size: 12px;
+}
