@@ -213,6 +213,7 @@ body{
     width: 935px;
     /* height: 500px; */
     /* background: red; */
+    position: relative; /* 기준점을 inner로 변경하기 위함 */
 }
 
 .contents_box{
@@ -345,4 +346,91 @@ body{
     cursor: pointer;
     pointer-events: none; /* 처음에는 클릭이 되지 않도록 한다 */
     opacity: 0.6;
+}
+
+.side_box{
+    width: 293px;
+    /* height: 300px; */
+    /* background: rgba(255,0,0,0.16) */
+    position: absolute; /* 부모를 갖는 기준점을 잡지 않으면 꼭대기까지 올라감 */
+    right: 0;
+    top: 0;
+}
+
+.side_box .profile_thumb{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden; /* 이미지가 넘치지 않도록 한다 */
+    margin-right: 10px;
+}
+
+.side_box .profile_thumb img{
+    width: 100%;
+    height: 100%;
+}
+
+.side_box .user_profile{
+    display: flex; /* 가로 배치 */
+    align-items: center;
+    font-size: 14px;
+    color: #262626;
+}
+
+.side_box .detail .id{
+    margin-bottom: 5px;
+}
+
+.side_box .detail .ko_name{
+    font-size: 12px;
+    color: #999;
+}
+
+.side_box > article{
+    border: 1px solid rgba(0,0,0,0.09);
+    border-radius: 3px;
+    margin-bottom: 20px;
+    width: 291px;
+    font-size: 14px;
+    color: #262626;
+    font-weight: bold;
+    background: white;
+}
+
+.side_box > article > header{
+    display: flex; /* 가로 배치 */
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    color: #999;
+}
+
+.side_box > article > header .more{
+    font-size: 12px;
+    color: #262626;
+    cursor: pointer;
+}
+
+.thumb_user{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.thumb_user .profile_thumb{
+    width: 34px; /* 크기가 좀 더 작게 만듬 */
+    height: 34px;
+}
+
+.thumb_user .time{
+    font-size: 10px;
+    letter-spacing: 0.2px;
+    color: #999;
+}
+
+.side_box .scroll_inner{
+    height: 182px;
+    overflow-x: hidden; /* x축_자식이 부모 넘지 못하게 한다 */
+    overflow-y: auto; /* 자동으로 스크롤을 보여주거나 숨김 */
+    /* overflow: hidden auto; x축, y축 한 번에 설정 */
 }
