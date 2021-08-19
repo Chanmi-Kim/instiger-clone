@@ -203,6 +203,11 @@ body{
     transform: translateY(2px);
 }
 
+#header .inner .logo .sprite_insta_icon{
+    position: relative; /* after에게 위치 기준을 전달해주기 위함 */
+    margin-right: 30px;
+}
+
 #main_container{
     padding-top: 130px;
     display: flex; /* 컨텐츠가 가운데에 위치할 수 있도록 함 */
@@ -225,7 +230,7 @@ body{
     /* height: 500px; */
     border: 1px solid rgba(0,0,0,0.09);
     border-radius: 3px; /* 테두리를 둥글게 만듬 */
-    margin-bottom: 50px; /* 다른 contents들이 밀려야 되기 때문에 사이에 여백을 준다 */
+    margin-bottom: 60px; /* 다른 contents들이 밀려야 되기 때문에 사이에 여백을 준다 */
     background: white;
 }
 
@@ -282,11 +287,6 @@ body{
 
 .contents .bottom_icons .left_icons > div{
     margin-right: 10px;
-    cursor: pointer; /* 누를 수 있도록 하기 위함 */
-}
-
-.contents .bottom_icons .right_icons > div{
-    cursor: pointer; /* 누를 수 있도록 하기 위함 */
 }
 
 .contents .likes{
@@ -346,6 +346,10 @@ body{
     cursor: pointer;
     pointer-events: none; /* 처음에는 클릭이 되지 않도록 한다 */
     opacity: 0.6;
+}
+
+.contents .bottom_icons .right_icon > div{
+    cursor: pointer; /* 누를 수 있도록 하기 위함 */
 }
 
 .side_box{
