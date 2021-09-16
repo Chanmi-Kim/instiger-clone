@@ -1,102 +1,102 @@
-.sprite_insta_icon {
+.sprite_insta_icon{
     display: inline-block;
 	background: url('../imgs/background01.png') no-repeat -53px -235px;
 	width: 22px;
 	height: 22px;
 }
 
-.sprite_write_logo {
+.sprite_write_logo{
     display: inline-block;
 	background: url('../imgs/background01.png') no-repeat -94px -72px;
 	width: 103px;
 	height: 29px;
 }
 
-.sprite_compass_icon {
+.sprite_compass_icon{
     display: inline-block;
 	background: url('../imgs/background01.png') no-repeat -130px -286px;
 	width: 23px;
 	height: 23px;
 }
 
-.sprite_user_icon_outline {
+.sprite_user_icon_outline{
     display: inline-block;
 	background: url('../imgs/background01.png') no-repeat -272px -182px;
 	width: 22px;
 	height: 24px;
 }
 
-.sprite_heart_icon_outline {
+.sprite_heart_icon_outline{
     display: inline-block;
 	background: url('../imgs/background01.png') no-repeat -52px -261px;
 	width: 24px;
 	height: 22px;
 }
 
-.sprite_small_search_icon {
+.sprite_small_search_icon{
     display: inline-block;
 	background: url('../imgs/background01.png') no-repeat -337px -246px;
 	width: 10px;
 	height: 10px;
 }
 
-.sprite_more_icon {
+.sprite_more_icon{
     display: inline-block;
 	background: url('../imgs/background01.png') no-repeat -301px -218px;
 	width: 15px;
 	height: 3px;
 }
 
-.sprite_bubble_icon {
+.sprite_bubble_icon{
     display: inline-block;
 	background: url('../imgs/background01.png') no-repeat -239px -202px;
 	width: 24px;
 	height: 24px;
 }
 
-.sprite_share_icon {
+.sprite_share_icon{
     display: inline-block;
 	background: url('../imgs/background01.png') no-repeat -324px -52px;
 	width: 21px;
 	height: 24px;
 }
 
-.sprite_bookmark_outline {
+.sprite_bookmark_outline{
     display: inline-block;
 	background: url('../imgs/background01.png') no-repeat -237px -286px;
 	width: 19px;
 	height: 24px;
 }
 
-.sprite_bookmark_outline.on {
+.sprite_bookmark_outline.on{
     display: inline-block;
 	background: url('../imgs/background01.png') no-repeat -159px -286px;
 	width: 19px;
 	height: 24px;
 }
 
-.sprite_small_heart_icon_outline {
+.sprite_small_heart_icon_outline{
     display: inline-block;
 	background: url('../imgs/background01.png') no-repeat -323px -274px;
 	width: 12px;
 	height: 11px;
 }
 
-.sprite_camera_icon {
+.sprite_camera_icon{
     display: inline-block;
 	background: url('../imgs/background01.png') no-repeat -271px -104px;
 	width: 24px;
 	height: 22px;
 }
 
-.sprite_insta_big_logo {
+.sprite_insta_big_logo{
     display: inline-block;
 	background: url('../imgs/background02.png') no-repeat -98px -150px;
 	width: 175px;
 	height: 51px;
 }
 
-.sprite_plus_icon {
+.sprite_plus_icon{
     display: inline-block;
 	background: url('../imgs/background01.png') no-repeat -187px -202px;
 	width: 23px;
@@ -439,51 +439,6 @@ body{
     /* overflow: hidden auto; x축, y축 한 번에 설정 */
 }
 
-@media screen and (max-width:1000px) {
-    #header .inner{
-        width: 975px;
-    }
-
-    .contents{
-        width: 614px;
-        /* heigth: 500px; */
-        border: 1px solid rgba(0,0,0,0.09);
-        border-radius: 3px; /* 테두리를 둥글게 만듬 */
-        margin-bottom: 60px; /* 다른 contents들이 밀려야 되기 때문에 사이에 여백을 준다 */
-        background: white;
-    }
-}
-
-@media screen and (max-width:1000px) {
-    #header .inner {
-        width: 97.5%;
-    }
-
-    #main_container{
-        padding-top: 220px;
-    }
-
-    #main_container .inner{
-        width: 93.5%;
-    }
-
-    .side_box { /* 사이드 박스 숨기기 */
-        display: flex;
-        flex-direction: column; /* 세로 배치 받도록 한다 */
-        align-items: center; /* 왼쪽으로 치우쳐 지는 걸 방지 */
-    }
-
-    .side_box { /* 사이드 박스 숨기기 */
-        display: none;
-    }
-}
-
-@media screen and (max-width:650px) {
-    #header .search_box {
-        display: none;
-    }
-}
-
 .hidden_menu{
     display: none;
     width: 600px;
@@ -532,4 +487,42 @@ body{
 .hidden_menu .thumb_img img{
     width: 100%;
     height: 100%;
+}
+
+@media screen and (max-width:1000px){
+    #header .inner{
+        width: 97.5%;
+    }
+
+    #main_container{
+        padding-top: 220px;
+    }
+
+    #main_container .inner{
+        width: 93.5%;
+    }
+
+    .contents_box{ /* 사이드 박스 숨기기 */
+        display: flex;
+        flex-direction: column; /* 세로 배치 받도록 한다 */
+        align-items: center; /* 왼쪽으로 치우쳐 지는 걸 방지 */
+    }
+
+    .side_box{ /* 사이드 박스 숨기기 */
+        display: none;
+    }
+
+    .hidden_menu{
+        display: block;
+    }
+}
+
+@media screen and (max-width:650px){
+    #header .search_box {
+        display: none;
+    }
+
+    .hidden_menu{
+        width: 95%
+    }
 }
