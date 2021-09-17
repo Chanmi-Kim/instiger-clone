@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript_test</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+        .box .on{ /* 클래스 박스와 on이라는 속성을 함께 가짐 */
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <script>
+        // var userName = "착한호랑이";
+        const userName="착한호랑이"; // string 문자열("",'')
+        const age = 43; // number 숫자
+        const married = false; // boolean 참, 거짓
+        let girlfriend; // undefined 정의되지 않음
+        const money = null; // null 비어있음
+
+        // console.log(userName);
+        console.log(typeof userName);
+        console.log(typeof age);
+        console.log(typeof married);
+        console.log(typeof girlfriend);
+        console.log(typeof money);
+
+        // 산술연산자
+        console.log(2-3);
+        console.log(2*3);
+
+        // 비교 연산자
+        console.log(userName === '나쁜호랑이');
+        console.log(userName === '착한호랑이');
+        console.log(age > 30);
+        console.log(age < 30);
+
+        /* if(userName === '착한호랑이'){
+            console.log('정답!');
+        } */
+
+        /* if(userName === '나쁜호랑이'){
+            console.log('정답!')
+        } */ 
+
+        /* if(userName === '나쁜호랑이'){
+            console.log('정답!')
+        } else {
+            console.log('오답!')
+        } */
+    </script>
+</body>
+</html>
